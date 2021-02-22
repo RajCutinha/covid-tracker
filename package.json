@@ -1,0 +1,24 @@
+{
+	"name": "covid-tracker",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel src/index.html -p 3000 --open",
+		"build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps",
+		"build": "npm run clean && npm run build:parcel",
+		"clean": "rm -rf dist/*"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/nouislider": "^9.0.9",
+		"parcel-bundler": "^1.3.1",
+		"typescript": "^4.1.5"
+	},
+	"dependencies": {
+		"lit-element": "^2.4.0",
+		"nouislider": "^14.6.3"
+	}
+}

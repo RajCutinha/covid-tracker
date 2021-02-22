@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #c5c5c5;
+}
+
+.container {
+	width: min(80%, 1440px);
+	margin: 0 auto;
+}
+
+header {
+	background-color: #140f1a;
+	color: #fff;
+	padding: 2em 0;
+}
+
+#app {
+	padding: 3em 0;
+}
+
+#app .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: masonry;
+	gap: 2em;
+}
+
+#app .container my-search {
+	grid-column: 1/-1;
+}
+
+#app .container slider-element {
+	grid-column: 1/-1;
+}
+
+.slider-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.slider-container h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+	font-size: Inter, sans-serif;
+}
+
+.slider-container h3:nth-child(2) {
+	justify-self: end;
+}
+
+#slider {
+	grid-column: 1/-1;
+}
